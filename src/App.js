@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Gist from "react-gist";
 
 import './css/App.css';
 import "./css/microbit.css"
@@ -7,7 +8,6 @@ import soarcs from "./asset/SoarCS.png";
 import myr from "./asset/MYR-Project.png";
 
 export default class MainPage extends Component {
-
 	MYRProjectHelper(){
 		return (
 			<div>
@@ -20,13 +20,14 @@ export default class MainPage extends Component {
 			</div>
 		);
 	}
+
 	PythonProjectHelper(){
 		return (
 			<div>
 				<h2>Title of the Python Project by Jaelyn</h2> 
 				<p>Description of the Project</p>
 				<a href="https://colab.research.google.com">Link to Colab project</a>
-				<script src="https://gist.github.com/Jlu18/e5b7a3d5778d1bb73869f6e6f8412225.js"></script>
+				<Gist id="e5b7a3d5778d1bb73869f6e6f8412225"></Gist>
 				<hr/>
 			</div>
 		);
@@ -43,8 +44,7 @@ export default class MainPage extends Component {
 						<iframe title="Simulator" src="https://makecode.microbit.org/---run?id=_0hb4iPUfvJ1c" allow="fullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin"></iframe>
 					</div>
 					<div id="code">
-						<iframe title="Code"
-						src="https://makecode.microbit.org/---codeembed#pub:_0hb4iPUfvJ1c" allow="fullscreen" sandbox="allow-scripts allow-same-origin"></iframe>
+						<iframe title="Code" src="https://makecode.microbit.org/---codeembed#pub:_0hb4iPUfvJ1c" allow="fullscreen" sandbox="allow-scripts allow-same-origin"></iframe>
 					</div>
 				</div>
 				<hr/>
