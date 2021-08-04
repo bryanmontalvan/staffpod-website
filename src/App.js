@@ -7,7 +7,34 @@ import "./css/microbit.css"
 import soarcs from "./asset/SoarCS.png";
 import myr from "./asset/MYR-Project.png";
 
+
 export default class MainPage extends Component {
+
+	navbar(){
+		return (
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<a class="navbar-brand" href="#"> <img src={soarcs} alt="nav-logo"></img></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Staff</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Winners</a>
+					</li>
+					</ul>
+				</div>
+				</nav>
+		);
+	}
+
+
 	MYRProjectHelper(){
 		return (
 			<div>
@@ -69,6 +96,7 @@ export default class MainPage extends Component {
 	render(){
 		return (
 			<div className="App">
+				{this.navbar()}
 				<h1>SoarCS Staff Presentation</h1>
 				{this.MYRProjectHelper()}
 				{this.MicrobitProjectHelper()}
