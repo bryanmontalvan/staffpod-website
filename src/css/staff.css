@@ -1,0 +1,9 @@
+#staff-picture{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.staff{
+    margin-top: 2em;
+}

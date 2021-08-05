@@ -1,8 +1,10 @@
 import { Component } from "react";
 import Gist from "react-gist";
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './css/App.css';
 import "./css/microbit.css"
+import Staff from "./staff";
 
 import soarcs from "./asset/SoarCS.png";
 import myr from "./asset/MYR-Project.png";
@@ -96,13 +98,24 @@ export default class MainPage extends Component {
 	render(){
 		return (
 			<div className="App">
-				{this.navbar()}
-				<h1>SoarCS Staff Presentation</h1>
-				{this.MYRProjectHelper()}
-				{this.MicrobitProjectHelper()}
-				{this.PythonProjectHelper()}
-				<hr/>
-				{this.FooterHelper()}	
+				<Router>
+					{this.navbar()}
+					<div className="content">
+						<Switch>
+							<Route exact path="/">
+								<h1>SoarCS Staff Presentation</h1>
+								{this.MYRProjectHelper()}
+								{this.MicrobitProjectHelper()}
+								{this.PythonProjectHelper()}
+							</Route>
+							<Route path="/staff">
+								<Staff />
+							</Route>
+						</Switch>
+					</div>
+					<hr/>
+					{this.FooterHelper()}
+				</Router>
 			</div>
 		  );
 	}
