@@ -3,6 +3,7 @@ import myr from "./asset/Jaelyn.jpg";
 import zach from "./asset/ZacharyMcCann.jpg"
 import danielle from "./asset/danielle.png"
 import bryan from "./asset/bryan.jpg"
+import justin from "./asset/justin.jpg"
 
 import './css/App.css';
 import './css/staff.css';
@@ -27,9 +28,10 @@ const Staff = () => {
                 </div>
                 <hr />
                 <div className="staff">
+                    <img src={justin} alt="Justin" id="staff-picture"></img>
                     <h2>Justin Lu</h2>
-                    <p><b>Description:</b></p>
-                    <p><b>Favorite Technologies:</b></p>
+                    <p><b>Description:</b><br/>Hi, my name is Justin. I'm a rising senior at UML. This is my third year being part of a SoarCS. Also, I'm a research assistant at the Engaging Computing Group, responsible for the development of MYR. In my spare time, I like to listen to music, play games, and do programming! Right now, I'm into graphical programming with C++ and OpenGL📺</p>
+                    <p><b>Favorite Technologies:</b><br/>OpenGL,WebGL,HTML,JS,VSCode</p>
                 </div>
                 <hr />
                 <div className="staff">
