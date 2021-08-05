@@ -25,3 +25,11 @@
 .App-link {
   color: #61dafb;
 }
+
+.nav-link{
+  margin-right: 1.5em;
+}
+
+.nav-link:hover{
+  border-bottom: 1px solid black;
+}

@@ -44,7 +44,7 @@ const Staff = () => {
                 <div className="staff">
                     <img src={bryan} alt="bryan" id="staff-picture"></img>
                     <h2>Bryan Montalvan</h2>
-                    <p><b>Description:</b><br />Hello everyone my name is Bryan and I am a rising Sophomore here at UMASS Lowell. I enjoy web dev, working out, and swimming!</p>
+                    <p><b>Description:</b><br />Hello everyone my name is Bryan and I am a rising Sophomore here at UMASS Lowell. Since a young age I've enjoyed playing around with code. And now I enjoy the web dev side of CS. I enjoy playing various sports and working out</p>
                     <p><b>Favorite Technologies:</b><br />VS Code, HTML/CSS</p>
                 </div>
             </div>

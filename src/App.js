@@ -62,9 +62,6 @@ export default class MainPage extends Component {
 					<li id="b" className="nav-item">
 						<a className="nav-link" href="/staff" onClick={this.handleClick}>Staff</a>
 					</li>
-					<li id="c" className="nav-item">
-						<a className="nav-link" href="/" onClick={this.handleClick}>Winners</a>
-					</li>
 					</ul>
 				</div>
 				</nav>
