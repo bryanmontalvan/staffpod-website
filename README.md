@@ -9,5 +9,5 @@ Role | Person
 -----|------
 MYR | Zach 
 Micro:bit | Danielle
-Python | Jaeyln
+Python | Jaelyn
 Webpage | Justin & Bryan
